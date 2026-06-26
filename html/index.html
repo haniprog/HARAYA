@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARAYA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="topbar">
+        <a class="topbar-brand" href="#top" aria-label="HARAYA home">
+            <img class="topbar-logo" src="../images/logo.png" alt="HARAYA logo">
+            <span class="topbar-name">HARAYA</span>
+        </a>
+
+        <nav class="topbar-nav" aria-label="Primary">
+            <a href="#top">Home</a>
+        </nav>
+
+        <button id="newAnalysisBtn" class="topbar-action" type="button">
+            <span aria-hidden="true">✳</span>
+            New Analysis
+        </button>
+    </header>
+
+    <main id="top" class="app-shell">
+        <section class="surface-card sequence-card">
+            <div class="surface-head">
+                <span class="surface-headmark" aria-hidden="true">✦✧</span>
+                <h2>Interaction Sequence Display</h2>
+            </div>
+
+            <div id="conversationList" class="message-stream" aria-live="polite">
+                <p class="message-empty">No conversation yet</p>
+            </div>
+        </section>
+
+        <section class="surface-card composer-card">
+            <div class="surface-head surface-head--compact">
+                <h2>Text / Conversation Input</h2>
+            </div>
+
+            <form id="composeForm" class="composer-panel" autocomplete="off">
+                <div class="composer-toolbar">
+                    <span class="composer-kicker">TYPE A MESSAGE AS</span>
+                    <div class="sender-toggle" role="tablist" aria-label="Select speaker">
+                        <button id="senderBtnUser" class="sender-toggle-btn is-active" type="button" data-sender="user">User A</button>
+                        <button id="senderBtnOther" class="sender-toggle-btn" type="button" data-sender="other">User B</button>
+                    </div>
+                </div>
+
+                <input id="senderInput" type="hidden" value="user">
+
+                <div class="composer-row">
+                    <div class="composer-field">
+                        <input
+                            id="messageInput"
+                            class="compose-input"
+                            type="text"
+                            placeholder="Type a message as User A..."
+                            aria-label="Add message"
+                        >
+                        <p class="composer-note">Press enter to append.</p>
+                    </div>
+
+                    <button id="addMessageBtn" class="compose-add-btn" type="submit" aria-label="Add message to sequence">
+                        <span aria-hidden="true">➤</span>
+                        Add to sequence
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <h2 class="section-title">Conversation Log</h2>
+        <section class="surface-card log-card">
+            <div id="conversationLog" class="conversation-log" aria-live="polite"></div>
+
+            <div class="log-actions">
+                <button id="clearConversationBtn" class="ghost-btn" type="button">Clear</button>
+                <button id="analyzeBtn" class="analyze-btn" type="button">Run Analysis</button>
+            </div>
+        </section>
+
+        <section class="surface-card result-card">
+            <h2>Overall HARAYA Decision</h2>
+
+            <div id="resultPlaceholder" class="result-empty">
+                <span class="sparkle" aria-hidden="true">✦</span>
+                <p>Analysis output will appear here.</p>
+            </div>
+
+            <div id="resultContent" class="result-content hidden">
+                <div class="result-main">
+                    <p id="classification" class="classification">No analysis yet.</p>
+                    <p id="confidence" class="metric">Confidence: --</p>
+                    <p id="score" class="metric">Final Score: --</p>
+                </div>
+
+                <section id="recommendationsPanel" class="result-block result-block--accent">
+                    <h3>Recommended Actions</h3>
+                    <ul id="recommendationList"></ul>
+                </section>
+
+                <section id="legalBasisPanel" class="result-block result-block--warm">
+                    <h3>Legal Basis</h3>
+                    <ul id="legalBasisList"></ul>
+                </section>
+
+                <section id="featureBreakdownPanel" class="result-block result-block--info">
+                    <h3>Feature Breakdown</h3>
+                    <ul id="featureBreakdownList"></ul>
+                </section>
+
+                <section id="escalationAnalysisPanel" class="result-block result-block--warm">
+                    <h3>Escalation Analysis</h3>
+                    <ul id="escalationAnalysisList"></ul>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="../js/app.js"></script>
+</body>
+</html>

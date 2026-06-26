@@ -1,0 +1,224 @@
+@media (max-width: 1280px) {
+    .topbar,
+    .app-shell {
+        max-width: 1080px;
+    }
+
+    .surface-head h2,
+    .result-card > h2 {
+        font-size: 15px;
+    }
+
+    .message-bubble p {
+        font-size: clamp(15px, 1.35vw, 22px);
+    }
+
+    .compose-input {
+        font-size: 15px;
+    }
+
+    .analyze-btn {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 980px) {
+    .topbar {
+        grid-template-columns: 1fr auto;
+    }
+
+    .topbar-nav {
+        display: none;
+    }
+
+    .result-card {
+        min-height: auto;
+    }
+
+    .message-stream {
+        min-height: 280px;
+        max-height: 360px;
+    }
+
+    .message-bubble {
+        max-width: 90%;
+    }
+
+    .composer-row {
+        grid-template-columns: 1fr;
+    }
+
+    .log-actions {
+        justify-content: space-between;
+        padding: 0 16px 0 16px;
+    }
+
+    .analyze-btn {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        background-size: 36px 36px;
+    }
+
+    .topbar {
+        margin: 10px auto 0;
+        padding: 10px 12px;
+        gap: 10px;
+    }
+
+    .topbar-logo {
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+    }
+
+    .topbar-name {
+        font-size: 18px;
+    }
+
+    .topbar-action {
+        height: 38px;
+        padding: 0 12px;
+        font-size: 13px;
+    }
+
+    .app-shell {
+        margin-top: 10px;
+        padding: 0 10px 24px;
+    }
+
+    .surface-card,
+    .result-card {
+        border-radius: 20px;
+    }
+
+    .section-title {
+        margin: 0 0 8px 2px;
+        font-size: 15px;
+    }
+
+    .section-kicker {
+        margin-top: 16px;
+        margin-bottom: 10px;
+        font-size: 11px;
+    }
+
+    .result-card {
+        padding: 16px;
+    }
+
+    .surface-head h2,
+    .result-card > h2 {
+        font-size: 14px;
+    }
+
+    .ghost-btn {
+        height: 32px;
+        font-size: 13px;
+    }
+
+    .message-stream {
+        min-height: 310px;
+        padding: 14px;
+        gap: 12px;
+    }
+
+    .message-entry {
+        grid-template-columns: 48px minmax(0, 1fr);
+        gap: 10px;
+    }
+
+    .message-entry.right {
+        grid-template-columns: minmax(0, 1fr) 48px;
+    }
+
+    .message-avatar {
+        width: 34px;
+        height: 34px;
+        margin-top: 4px;
+    }
+
+    .message-bubble {
+        max-width: 95%;
+        padding: 12px 14px 10px;
+    }
+
+    .message-bubble p {
+        font-size: 16px;
+    }
+
+    .composer-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .composer-kicker {
+        font-size: 11px;
+    }
+
+    .sender-toggle {
+        justify-content: center;
+    }
+
+    .compose-input {
+        height: 42px;
+        font-size: 15px;
+    }
+
+    .sender-toggle-btn {
+        height: 30px;
+        padding: 0 12px;
+        font-size: 13px;
+    }
+
+    .compose-add-btn {
+        height: 42px;
+        font-size: 13px;
+    }
+
+    .conversation-log {
+        padding: 16px 14px 10px;
+    }
+
+    .conversation-log-empty,
+    .conversation-log-row {
+        font-size: 15px;
+    }
+
+    .log-actions {
+        padding: 0 14px 0 14px;
+    }
+
+    .analyze-btn {
+        height: 40px;
+        border-radius: 12px;
+        font-size: 13px;
+    }
+
+    .result-empty {
+        min-height: 200px;
+        border-radius: 18px;
+        font-size: 15px;
+    }
+
+    .sparkle {
+        font-size: 32px;
+    }
+
+    .classification {
+        font-size: 30px;
+    }
+
+    .metric,
+    .result-block li {
+        font-size: 14px;
+    }
+
+    .result-block h3 {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,50 @@
+:root {
+    --bg: #f9dde8;
+    --bg-line: #efc5d5;
+    --panel: #fff8fc;
+    --panel-soft: #fff2f8;
+    --panel-stroke: #f0c8d7;
+    --text-strong: #4b2138;
+    --text-muted: #9c6f86;
+    --pink: #f061a0;
+    --pink-deep: #ed558f;
+    --pink-soft: #f8d2e2;
+    --rose-ink: #7a3658;
+    --rose-warm: #b76787;
+    --rose-gold: #c79256;
+    --mint: #87c6a2;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Manrope", sans-serif;
+    color: var(--text-strong);
+    background-color: var(--bg);
+    background-image:
+        linear-gradient(var(--bg-line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--bg-line) 1px, transparent 1px);
+    background-size: 54px 54px;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+.hidden {
+    display: none !important;
+}

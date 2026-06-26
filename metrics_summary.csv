@@ -1,0 +1,14 @@
+metric,class_name,value
+Accuracy,,0.37333333333333335
+Macro Precision,,0.3821821634832423
+Macro Recall,,0.39439671329824727
+Macro F1-Score,,0.2896655872462324
+Precision,Safe Interaction,0.9183673469387755
+Recall,Safe Interaction,0.3829787234042553
+F1-Score,Safe Interaction,0.5405405405405406
+Precision,Potential Harassment,0.13043478260869565
+Recall,Potential Harassment,0.20930232558139536
+F1-Score,Potential Harassment,0.16071428571428573
+Precision,Harassment,0.09774436090225563
+Recall,Harassment,0.5909090909090909
+F1-Score,Harassment,0.16774193548387098

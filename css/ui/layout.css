@@ -1,0 +1,147 @@
+.topbar {
+    max-width: 1120px;
+    margin: 16px auto 0;
+    padding: 12px 18px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid rgba(224, 170, 198, 0.85);
+    box-shadow: 0 12px 26px rgba(150, 63, 99, 0.08);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 16px;
+}
+
+.topbar-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: #503046;
+    text-decoration: none;
+}
+
+.topbar-logo {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 6px 16px rgba(168, 64, 112, 0.12);
+}
+
+.topbar-name {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+}
+
+.topbar-nav {
+    justify-self: center;
+}
+
+.topbar-nav a {
+    color: #8d7785;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.topbar-action {
+    height: 42px;
+    padding: 0 18px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #b72d73, #cf4d8e);
+    color: #fff;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 10px 18px rgba(183, 45, 115, 0.22);
+    cursor: pointer;
+}
+
+.app-shell {
+    max-width: 1120px;
+    margin: 14px auto 28px;
+    padding: 0 14px 0;
+    display: grid;
+    gap: 20px;
+}
+
+.surface-card,
+.result-card {
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(225, 169, 198, 0.95);
+    border-radius: 22px;
+    box-shadow: 0 10px 22px rgba(155, 69, 103, 0.06);
+}
+
+.surface-card {
+    padding: 0;
+    overflow: hidden;
+}
+
+.surface-head {
+    min-height: 38px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(180deg, #e8cfe1 0%, #e4c4dc 100%);
+    border-bottom: 1px solid rgba(210, 160, 185, 0.75);
+}
+
+.surface-head--compact {
+    background: transparent;
+    border-bottom: none;
+    padding: 0 0 10px;
+}
+
+.surface-headmark {
+    color: #fff;
+    font-size: 17px;
+    line-height: 1;
+}
+
+.surface-head h2,
+.result-card > h2 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: 0.01em;
+    color: #503046;
+}
+
+.ghost-btn {
+    border: 1px solid #d9b1c1;
+    background: #eedce4;
+    color: #6e5663;
+    border-radius: 999px;
+    height: 34px;
+    padding: 0 14px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.section-kicker {
+    margin: 18px 0 12px;
+    color: #7f4e68;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.section-title {
+    margin: 0 0 -4px 2px;
+    color: #503046;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+}
